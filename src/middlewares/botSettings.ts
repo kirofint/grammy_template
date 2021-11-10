@@ -25,8 +25,7 @@ const getMessageStatus = (status: string) => {
     case ReplyStatusList.Info:
       return 'ℹ️'
     default:
-      if (status?.length > 1)
-        return `${status}`
+      if (status?.length > 1) return status
   }
 }
 
